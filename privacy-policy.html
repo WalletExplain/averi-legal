@@ -102,8 +102,8 @@
       <h1>Averi Privacy Policy</h1>
       <p class="meta">
         App: <strong>Averi</strong> (Bundle ID: <code>com.jchen.Averi</code>)<br />
-        Effective Date / 生效日期: <strong>July 14, 2026</strong><br />
-        Last Updated / 最后更新: <strong>July 14, 2026</strong><br />
+        Effective Date / 生效日期: <strong>July 23, 2026</strong><br />
+        Last Updated / 最后更新: <strong>July 23, 2026</strong><br />
         Operator / 运营者:
         <strong>Averi 个人开发者 / Individual developer of Averi</strong><br />
         Contact / 联系邮箱:
@@ -138,10 +138,12 @@
       <h2>2. Scope</h2>
       <p>This Privacy Policy explains:</p>
       <ul>
-        <li>what information Averi processes;</li>
-        <li>why we process it;</li>
+        <li>what information Averi collects and processes;</li>
+        <li>how that information is collected;</li>
+        <li>all uses of that information;</li>
+        <li>with whom it is shared (including third-party AI providers);</li>
         <li>where processing occurs (on-device vs. servers);</li>
-        <li>your choices and rights;</li>
+        <li>your choices, consent, and rights;</li>
         <li>how to contact us.</li>
       </ul>
       <p>
@@ -160,7 +162,7 @@
 
       <h3>3.2 Information collected automatically on device</h3>
       <ul>
-        <li><strong>Local app data</strong>: workflow history, preferences (e.g., language), subscription/credit state stored locally, and similar settings needed for the app to function.</li>
+        <li><strong>Local app data</strong>: workflow history, preferences (e.g., language), AI privacy consent preference, subscription/credit state stored locally, and similar settings needed for the app to function.</li>
         <li><strong>Device permissions you grant</strong>: camera, photo library, and document access are used only when you initiate the corresponding action. We do not access these permissions in the background for unrelated purposes.</li>
         <li><strong>Diagnostics (if enabled by the OS / App Store)</strong>: crash or performance signals may be processed by Apple according to your device settings.</li>
       </ul>
@@ -185,6 +187,7 @@
       <h2>4. How We Use Information</h2>
       <ul>
         <li>to provide, maintain, and improve Averi’s workflows and AI analysis features;</li>
+        <li>to transmit the content needed for an AI request to the recipients described in Section 5, after you grant permission;</li>
         <li>to show remaining AI credits / membership status in the app;</li>
         <li>to respond to support and feedback requests;</li>
         <li>to comply with applicable laws, App Store rules, and enforce our EULA;</li>
@@ -193,19 +196,40 @@
       </ul>
       <p class="note">
         Legal bases (where GDPR/UK GDPR or similar frameworks apply): performance of a contract,
-        legitimate interests (secure and improve the service), consent (where required, including
-        certain device permissions and optional processing), and legal obligation.
+        legitimate interests (secure and improve the service), consent (including in-app AI data-sharing
+        permission and certain device permissions), and legal obligation.
       </p>
 
       <h2>5. AI Processing and Data Flow (Important)</h2>
       <p>
-        When you run an AI-powered workflow, the content necessary for that request may be
-        transmitted securely to our backend AI gateway and/or third-party large language model
-        providers acting as processors to generate results.
+        Averi uses the <strong>Averi AI Gateway</strong> to run AI-powered workflows.
+        Production builds do <strong>not</strong> require you to enter your own OpenAI or Gemini API keys
+        in the app for cloud AI to work.
+      </p>
+      <p>
+        <strong>What data may be sent:</strong> the text and document content (or extracted text excerpts)
+        that you provide for the specific workflow you run — only what is needed to complete that request.
+        Payment card numbers are not sent to the AI gateway or model providers.
+      </p>
+      <p>
+        <strong>Who receives the data:</strong>
+      </p>
+      <ul>
+        <li><strong>Averi AI Gateway</strong> (our backend AI gateway / processor), which securely receives the request; and</li>
+        <li>depending on the selected model, one of the following third-party AI providers acting as processors:
+          <strong>OpenAI</strong> and/or <strong>Google Gemini</strong> (Google).</li>
+      </ul>
+      <p>
+        <strong>Permission before sharing:</strong> before Averi first shares your content with the Averi AI Gateway
+        and these AI providers for analysis, the app presents an in-app disclosure and asks for your permission
+        (Allow / Don’t Allow). You may review or withdraw AI data sharing later in
+        <strong>Settings → AI Privacy → AI Data Sharing</strong>. If you do not allow AI data processing,
+        Averi will not send that content to the Averi AI Gateway or to OpenAI / Google Gemini for the request.
       </p>
       <ul>
         <li>We transmit only what is needed to fulfill your request.</li>
-        <li>We instruct processors to use submitted content to provide the service, not to sell it.</li>
+        <li>Submitted content is used to generate the AI response for that request; it is <strong>not</strong> used for advertising and is <strong>not</strong> sold.</li>
+        <li>We require processors that receive personal data to provide protection that is the same as or equal to the protections described in this Policy, to the extent applicable to their role as processors.</li>
         <li>Model providers may process data in jurisdictions outside your country of residence.</li>
         <li>You should avoid submitting unnecessary highly sensitive identifiers (e.g., full national ID numbers) when possible; redact before upload if appropriate.</li>
       </ul>
@@ -219,7 +243,9 @@
       <h2>6. Sharing and Recipients</h2>
       <p>We may share information only as follows:</p>
       <ul>
-        <li><strong>Service providers / processors</strong>: hosting, AI inference, security, and email infrastructure under contractual or equivalent safeguards.</li>
+        <li><strong>Averi AI Gateway</strong>: to route and fulfill AI analysis requests you authorize.</li>
+        <li><strong>OpenAI</strong> and/or <strong>Google Gemini (Google)</strong>: third-party AI processors that generate model outputs for authorized requests, as described in Section 5.</li>
+        <li><strong>Other service providers / processors</strong>: hosting, security, and email infrastructure under contractual or equivalent safeguards.</li>
         <li><strong>Apple</strong>: for distribution, In-App Purchase, analytics/crash reporting you enable, and App Store compliance.</li>
         <li><strong>Legal / safety</strong>: when required by law, court order, or to protect rights, safety, and security.</li>
         <li><strong>Business transfer</strong>: in a merger, acquisition, or reorganization, subject to continued protection consistent with this Policy or notice to you.</li>
@@ -229,6 +255,7 @@
       <h2>7. Health-Related Content — Extra Caution</h2>
       <ul>
         <li>Health-related materials are processed only because you upload/input them.</li>
+        <li>If you run an AI workflow on health-related content after granting AI data-sharing permission, that content may be sent to the Averi AI Gateway and then to OpenAI or Google Gemini solely to fulfill your request.</li>
         <li>Averi’s outputs are informational and educational aids only — not clinical advice.</li>
         <li>Always consult qualified clinicians for medical decisions.</li>
         <li>We do not use health-related content for advertising.</li>
@@ -238,6 +265,7 @@
       <h2>8. Data Retention</h2>
       <ul>
         <li><strong>On-device data</strong>: retained until you delete it in-app, uninstall the app, or clear device storage.</li>
+        <li><strong>AI privacy consent preference</strong>: stored locally on your device until you change it or clear app data.</li>
         <li><strong>Transient AI request data</strong>: retained only as long as needed to generate the response, operate/secure the service, debug abuse/fraud, and meet legal obligations; then deleted or anonymized in accordance with our retention practices.</li>
         <li><strong>Support emails</strong>: retained as needed to resolve your request and for legitimate business/legal records.</li>
         <li><strong>Purchase records</strong>: retained as required for accounting, tax, fraud prevention, and App Store reconciliation.</li>
@@ -253,9 +281,9 @@
 
       <h2>10. International Transfers</h2>
       <p>
-        If you use Averi from outside the processing location of our servers or model providers,
-        your information may be transferred to and processed in other countries, including
-        jurisdictions that may have different data-protection laws.
+        If you use Averi from outside the processing location of our servers or model providers
+        (including OpenAI and Google Gemini), your information may be transferred to and processed
+        in other countries, including jurisdictions that may have different data-protection laws.
         Where required, we use appropriate safeguards (such as contractual protections) for such transfers.
       </p>
 
@@ -269,6 +297,11 @@
         <li>withdraw consent (without affecting prior lawful processing);</li>
         <li>lodge a complaint with a supervisory authority.</li>
       </ul>
+      <p>
+        <strong>AI data sharing:</strong> you can allow or deny AI data processing in the in-app consent prompt,
+        and later change this in <strong>Settings → AI Privacy → AI Data Sharing</strong>.
+        Turning AI Data Sharing off withdraws permission for future AI requests until you allow again.
+      </p>
       <p>
         In Averi, you can typically delete local history/files via in-app controls (where available)
         or by uninstalling the app. For other requests, email
@@ -291,8 +324,9 @@
 
       <h2>13. Third-Party Links and Services</h2>
       <p>
-        Averi may reference third-party services (including Apple). Their privacy practices are controlled by those parties.
-        Review their policies before use.
+        Averi may reference third-party services (including Apple, OpenAI, and Google).
+        Their privacy practices are controlled by those parties. Review their policies before use.
+        For AI processing specifically, see Section 5.
       </p>
 
       <h2>14. Changes to This Policy</h2>
@@ -348,7 +382,7 @@
       </ul>
       <h3>2. 设备本地自动产生的信息</h3>
       <ul>
-        <li>本地历史、语言偏好、订阅/额度状态等应用运行所需数据；</li>
+        <li>本地历史、语言偏好、AI 隐私授权偏好、订阅/额度状态等应用运行所需数据；</li>
         <li>仅在您触发功能时，经系统授权使用的相机、相册、文件访问权限；</li>
         <li>您在系统/App Store 设置中允许的崩溃或性能诊断（由 Apple 按其规则处理）。</li>
       </ul>
@@ -368,6 +402,7 @@
       <h2>三、我们如何使用信息</h2>
       <ul>
         <li>提供、维护与改进 Averi 功能与 AI 分析；</li>
+        <li>在您授权后，将完成本次 AI 请求所需的内容传输至本政策第四节所述接收方；</li>
         <li>展示会员/AI 额度状态；</li>
         <li>回应支持与反馈；</li>
         <li>遵守法律法规与 App Store 规则，履行 EULA；</li>
@@ -376,22 +411,45 @@
 
       <h2>四、AI 处理与数据传输（重要）</h2>
       <p>
-        当您运行 AI 工作流时，完成该次请求所必需的内容可能经加密传输至我们的后端 AI 网关
-        及/或第三方大模型服务商（作为受托处理者）以生成结果。
+        Averi 使用 <strong>Averi AI Gateway</strong>（Averi AI 网关）运行 AI 工作流。
+        正式版<strong>不要求</strong>您在 App 内自行填写 OpenAI 或 Gemini API 密钥才能使用云端 AI。
+      </p>
+      <p>
+        <strong>会发送哪些数据：</strong>您为当前工作流提供的文本、文档内容或提取后的文本摘要等，
+        且仅限于完成本次请求所必需的内容。支付卡号不会发送给 AI 网关或模型服务商。
+      </p>
+      <p>
+        <strong>数据发送给谁：</strong>
+      </p>
+      <ul>
+        <li><strong>Averi AI Gateway</strong>（我们的后端 AI 网关 / 受托处理者），安全接收请求；以及</li>
+        <li>根据所选模型，由以下第三方 AI 服务商作为受托处理者进行处理：
+          <strong>OpenAI</strong> 和/或 <strong>Google Gemini</strong>（Google）。</li>
+      </ul>
+      <p>
+        <strong>发送前征得同意：</strong>在 Averi 首次将您的内容发送至 Averi AI Gateway 及上述 AI 服务商进行分析前，
+        应用内会展示说明并请求您的许可（允许 / 不允许）。您可稍后在
+        <strong>设置 → AI 隐私 → AI 数据共享</strong>中查看或撤回授权。
+        若您不允许 AI 数据处理，Averi 不会为该次请求向 Averi AI Gateway、OpenAI 或 Google Gemini 发送相关内容。
+      </p>
+      <ul>
+        <li>我们仅传输完成请求所需的数据；</li>
+        <li>提交内容仅用于生成本次 AI 结果，<strong>不用于广告</strong>，也<strong>不会出售</strong>；</li>
+        <li>我们要求接收个人信息的受托方提供不低于本政策所述水平的保护（就其作为处理者的职责范围而言）；</li>
+        <li>模型服务可能在境外处理数据；</li>
+        <li>请尽量避免上传非必要的高度敏感身份信息，必要时请先脱敏。</li>
+      </ul>
+      <p>
         AI 分析<strong>并不等于</strong>“全程仅在设备本地推理”。
         应用内关于“文件保存在设备”的说明，指您的资料库/历史可本地保存；
         不能理解为 AI 分析过程中绝不会发生网络传输。
       </p>
-      <ul>
-        <li>我们仅传输完成请求所需的数据；</li>
-        <li>要求处理者将内容用于提供服务，而非出售；</li>
-        <li>模型服务可能在境外处理数据；</li>
-        <li>请尽量避免上传非必要的高度敏感身份信息，必要时请先脱敏。</li>
-      </ul>
 
       <h2>五、共享与受托方</h2>
       <ul>
-        <li>为提供服务所必需的托管、AI 推理、安全与邮件等受托方；</li>
+        <li><strong>Averi AI Gateway</strong>：用于路由并完成您已授权的 AI 分析请求；</li>
+        <li><strong>OpenAI</strong> 和/或 <strong>Google Gemini（Google）</strong>：作为第三方 AI 处理者为已授权请求生成结果（详见第四节）；</li>
+        <li>为提供服务所必需的其他托管、安全与邮件等受托方；</li>
         <li>Apple（分发、内购、您授权的诊断等）；</li>
         <li>法律要求或为保护用户与公众安全所必需的披露；</li>
         <li>并购重组等情形下的有限转移（仍将要求保护水平不降低或依法告知）。</li>
@@ -401,6 +459,7 @@
       <h2>六、健康相关内容</h2>
       <ul>
         <li>仅因您主动上传/输入而处理；</li>
+        <li>若您在授予 AI 数据共享许可后，对健康相关内容运行 AI 工作流，该内容可能被发送至 Averi AI Gateway，再由 OpenAI 或 Google Gemini 处理，且仅用于完成本次请求；</li>
         <li>输出仅供信息参考，不构成诊疗意见；</li>
         <li>医疗决策请咨询专业医务人员；</li>
         <li>不将健康相关内容用于广告；</li>
@@ -410,6 +469,7 @@
       <h2>七、保存期限</h2>
       <ul>
         <li>本地数据：直至您在应用内删除、卸载应用或清理设备存储；</li>
+        <li>AI 隐私授权偏好：保存在本机，直至您修改或清除应用数据；</li>
         <li>AI 请求数据：以实现响应、保障安全、排查滥用及履行法定义务所需为限，之后删除或匿名化；</li>
         <li>支持邮件与交易记录：按处理事项、会计税务与争议解决需要保存。</li>
       </ul>
@@ -422,12 +482,17 @@
 
       <h2>九、跨境提供</h2>
       <p>
-        若服务器或模型服务位于境外，您的信息可能被跨境传输与处理。
+        若服务器或模型服务（含 OpenAI、Google Gemini）位于境外，您的信息可能被跨境传输与处理。
         我们将在适用法律要求下采取合同条款等必要措施，并依法履行告知、评估或标准合同等义务（如适用）。
       </p>
 
       <h2>十、您的权利（含《个人信息保护法》）</h2>
       <p>在适用法律下，您可能享有查阅、复制、更正、删除、撤回同意、限制或拒绝特定处理、投诉等权利。</p>
+      <p>
+        <strong>AI 数据共享：</strong>您可在应用内授权弹窗中选择允许或不允许，也可稍后在
+        <strong>设置 → AI 隐私 → AI 数据共享</strong>中修改。
+        关闭 AI 数据共享即撤回对后续 AI 请求的许可，直至您再次允许。
+      </p>
       <p>
         您可通过应用内删除（如有）或卸载应用管理本地数据；其他请求请发邮件至
         <a href="mailto:Averi@familymedvault.com">Averi@familymedvault.com</a>。
@@ -452,7 +517,7 @@
       <p>
         本中文与英文版本一并提供以便阅读。涉及中国境内消费者依法享有的强制性权益，
         以中华人民共和国法律法规的强制性规定为准；其他情形下英文版本可用于帮助统一理解。
-        本政策为信息披露与合规说明，不构成对第三方（含 Apple、模型服务商）行为的担保。
+        本政策为信息披露与合规说明，不构成对第三方（含 Apple、OpenAI、Google）行为的担保。
       </p>
 
       <h2>十四、联系我们</h2>
